@@ -3,23 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dayanidhi Meganathan — MSc Cyber Security student, cybersecurity researcher and builder in the UK." />
-  <title>Dayanidhi Meganathan | Cybersecurity</title>
+  <title>Dayanidhi Meganathan — Cybersecurity & Digital Forensics</title>
+  <meta name="description" content="Dayanidhi Meganathan — MSc Cybersecurity student at the University of Hertfordshire. Digital forensics, incident response, and applied security research." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dayanidhi Meganathan — Cybersecurity & Digital Forensics" />
+  <meta property="og:description" content="MSc Cybersecurity student. Cybercrime investigations, DFIR, and open-source security tooling." />
+  <meta property="og:url" content="https://dayanidhi.com" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="canonical" href="https://dayanidhi.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dayanidhi Meganathan",
+    "jobTitle": "MSc Cybersecurity Student",
+    "affiliation": "University of Hertfordshire",
+    "url": "https://dayanidhi.com",
+    "sameAs": [
+      "https://github.com/nobydayan",
+      "https://linkedin.com/in/dayanidhi-m"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="grid-bg"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
   <header class="nav-wrap">
     <nav class="nav container">
       <a class="brand" href="#home">DAYANIDHI<span>.</span></a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#work">Work</a>
-        <a href="#research">Research</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -27,98 +54,143 @@
 
   <main>
     <section id="home" class="hero container">
-      <div class="eyebrow"><span class="pulse"></span> Based in the United Kingdom</div>
-      <h1>Building at the intersection of <span>cybersecurity</span>, research & AI.</h1>
-      <p class="hero-copy">I'm <strong>Dayanidhi Meganathan</strong>, an MSc Cyber Security student documenting practical security work, investigations and technical growth.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#work">Explore my work <span>↗</span></a>
-        <a class="btn ghost" href="#contact">Let's connect</a>
-      </div>
-      <div class="signal-row">
-        <div><b>01</b><span>Cybersecurity</span></div>
-        <div><b>02</b><span>Research</span></div>
-        <div><b>03</b><span>AI Security</span></div>
-        <div><b>04</b><span>DFIR</span></div>
-      </div>
-    </section>
+      <div class="hero-grid">
+        <div class="hero-copy-col">
+          <div class="eyebrow"><span class="pulse"></span> Hatfield, UK · Open to internships</div>
+          <h1>Investigating threats. <span>Building</span> the tools to catch them.</h1>
+          <p class="hero-copy">I'm <strong>Dayanidhi Meganathan</strong>, an MSc Cybersecurity student who has worked live cybercrime cases with the Tamil Nadu Police Cyber Cell and now builds open-source security tooling and DFIR workflows.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">See the work <span>↗</span></a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+          <div class="signal-row">
+            <div><b>3</b><span>Internships incl. Govt of India</span></div>
+            <div><b>4+</b><span>Shipped security projects</span></div>
+            <div><b>5</b><span>Industry certifications</span></div>
+          </div>
+        </div>
 
-    <section id="about" class="section container">
-      <div class="section-label">01 / ABOUT</div>
-      <div class="split">
-        <h2>I learn by building, investigating and sharing.</h2>
-        <div class="body-copy">
-          <p>Currently pursuing an <strong>MSc Cyber Security with Work Placement</strong> at the University of Hertfordshire.</p>
-          <p>My interests span security operations, digital forensics, AI security and practical offensive security. I use this site as the central record of my projects, research and contributions to the security community.</p>
+        <div class="terminal" role="img" aria-label="Terminal window showing a simulated security scan">
+          <div class="terminal-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="terminal-title">dayanidhi@security:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-body" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section container">
-      <div class="section-label">02 / SELECTED WORK</div>
-      <div class="section-head">
-        <h2>Projects & investigations</h2>
-        <a href="https://github.com/" target="_blank" rel="noreferrer">View GitHub ↗</a>
+    <section id="about" class="section container">
+      <div class="section-label">ABOUT</div>
+      <div class="split">
+        <h2>Security is a discipline of noticing what others miss.</h2>
+        <div class="body-copy">
+          <p>I'm currently reading for an <strong>MSc Cybersecurity with Work Placement</strong> at the University of Hertfordshire, after a BCA in Cybersecurity from BSA Crescent Institute in Chennai (CGPA 8.13/10).</p>
+          <p>My work sits across three areas: <strong>digital forensics &amp; incident response</strong>, <strong>offensive security</strong> (vulnerability assessment, CTFs, bug bounty style testing), and <strong>practical tool-building</strong> — turning a security problem into something I can ship, measure, and hand to someone else to use.</p>
+          <p>I got my start in the field on live cases, not lab exercises — three months investigating real reports at the Tamil Nadu Police Cyber Cell shaped how I think about evidence and risk ever since.</p>
+        </div>
       </div>
-      <div class="cards">
-        <article class="card featured">
-          <div class="card-top"><span>Browser Security</span><span>01</span></div>
-          <div>
-            <h3>SecureCookieGuard</h3>
-            <p>A Chrome extension exploring stronger cookie protection, encryption and threat detection in modern browser environments.</p>
-          </div>
-          <div class="tags"><span>AES-256</span><span>Chrome MV3</span><span>Security</span></div>
+    </section>
+
+    <section id="experience" class="section container">
+      <div class="section-label">EXPERIENCE</div>
+      <div class="timeline">
+        <article class="tl-item">
+          <div class="tl-meta"><span class="tl-date">Jun – Aug 2025</span><span class="tl-tag">Government · On-site</span></div>
+          <h3>Cybercrime Intern — Tamil Nadu Police Cyber Cell</h3>
+          <p>Supported live cybercrime investigations across two units (Cyber Cell, Chengalpattu and Cyber Crime Wing, Chennai): digital evidence handling, incident documentation, threat triage, and public digital-safety awareness work. Built <strong>TOR-Unveil</strong>, a TOR traffic-analysis tool, for the TN Police Hackathon 2025.</p>
         </article>
-        <article class="card">
-          <div class="card-top"><span>Risk Analysis</span><span>02</span></div>
-          <div>
-            <h3>OWASP CVSS Risk Calculator</h3>
-            <p>A practical security project focused on vulnerability scoring and communicating technical risk.</p>
-          </div>
-          <div class="tags"><span>OWASP</span><span>CVSS</span></div>
+        <article class="tl-item">
+          <div class="tl-meta"><span class="tl-date">Jul – Aug 2024</span><span class="tl-tag">Remote</span></div>
+          <h3>Web Development Intern — AICTE &amp; Edunet Foundation</h3>
+          <p>Built and deployed web applications with Python (Flask), HTML, CSS and JavaScript; identified and remediated security vulnerabilities and documented the fixes.</p>
         </article>
-        <article class="card">
-          <div class="card-top"><span>Digital Forensics</span><span>03</span></div>
-          <div>
-            <h3>DFIR Investigations</h3>
-            <p>Hands-on forensic workflows covering evidence acquisition, imaging and structured investigation.</p>
-          </div>
-          <div class="tags"><span>Autopsy</span><span>Forensics</span></div>
+        <article class="tl-item">
+          <div class="tl-meta"><span class="tl-date">Jun – Jul 2024</span><span class="tl-tag">Remote</span></div>
+          <h3>Cybersecurity Trainer — InternCareer</h3>
+          <p>Designed and delivered cybersecurity training content and knowledge-base documentation for learners new to the field.</p>
         </article>
       </div>
     </section>
 
-    <section id="research" class="section container">
-      <div class="section-label">03 / RESEARCH & WRITING</div>
-      <div class="split">
-        <h2>Turning technical curiosity into public work.</h2>
-        <div class="body-copy">
-          <p>I'm developing my research footprint around cybersecurity and emerging AI security challenges. Publications, technical articles and research identifiers will be collected here.</p>
-          <div class="link-stack">
-            <a href="#" aria-label="ORCID profile">ORCID <span>↗</span></a>
-            <a href="#" aria-label="Google Scholar profile">Google Scholar <span>↗</span></a>
-            <a href="#" aria-label="Medium profile">Medium <span>↗</span></a>
-            <a href="#" aria-label="ResearchGate profile">ResearchGate <span>↗</span></a>
+    <section id="work" class="section container">
+      <div class="section-label">SELECTED WORK</div>
+      <div class="section-head">
+        <h2>Projects &amp; investigations</h2>
+        <a href="https://github.com/nobydayan" target="_blank" rel="noreferrer">View GitHub ↗</a>
+      </div>
+      <div class="cards">
+        <article class="card featured">
+          <div class="card-top"><span>Risk Analysis</span></div>
+          <div>
+            <h3>OWASP CVSS Risk Calculator</h3>
+            <p>An open-source CVE finder and CVSS risk-scoring tool built on the OWASP Risk Ranking Methodology, pulling live CVE data and applying a weighted scoring model. Used by bug-bounty hunters and small security teams.</p>
           </div>
+          <div class="tags"><span>OWASP</span><span>CVSS</span><span>Live CVE data</span></div>
+          <a class="card-link" href="https://github.com/nobydayan/Owasp-CVSS-Risk-Calculator" target="_blank" rel="noreferrer">Repository ↗</a>
+        </article>
+        <article class="card">
+          <div class="card-top"><span>Browser Security</span></div>
+          <div>
+            <h3>SecureCookieGuard</h3>
+            <p>A Chrome extension that encrypts session cookies with AES-256-GCM to reduce exposure to session hijacking and CSRF. Originally a final-year project.</p>
+          </div>
+          <div class="tags"><span>AES-256-GCM</span><span>Chrome MV3</span></div>
+          <a class="card-link" href="https://github.com/Noby007/Secure-Cookie-Guard" target="_blank" rel="noreferrer">Repository ↗</a>
+        </article>
+        <article class="card">
+          <div class="card-top"><span>Pentest</span></div>
+          <div>
+            <h3>OWASP Juice Shop — Security Assessment</h3>
+            <p>Full web-application penetration test with documented findings, OWASP Top 10 classification, risk ratings and remediation recommendations.</p>
+          </div>
+          <div class="tags"><span>OWASP Top 10</span><span>Reporting</span></div>
+          <a class="card-link" href="https://github.com/nobydayan/OWASP-Juice-Shop-Security-Assessment" target="_blank" rel="noreferrer">Repository ↗</a>
+        </article>
+        <article class="card">
+          <div class="card-top"><span>Digital Forensics</span></div>
+          <div>
+            <h3>TOR-Unveil — Peel the Onion</h3>
+            <p>A TOR network traffic-analysis tool using socket programming and packet inspection, built for the Tamil Nadu Police Hackathon 2025 as a real client engagement.</p>
+          </div>
+          <div class="tags"><span>Python</span><span>Traffic analysis</span></div>
+          <span class="card-link muted">Private repository</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section container">
+      <div class="section-label">CERTIFICATIONS &amp; PRACTICE</div>
+      <div class="split">
+        <h2>Practice, not just theory.</h2>
+        <div class="body-copy">
+          <ul class="cert-list">
+            <li><span>CAPIE — Certified API Hacking Expert</span><small>TheXSSRat, 2025 — Burp Suite, API security, BOLA, auth bypass</small></li>
+            <li><span>Google Cybersecurity Professional Certificate</span><small>2025</small></li>
+            <li><span>Cisco Networking Academy — Ethical Hacker</span></li>
+            <li><span>EC-Council — Dark Web &amp; Cryptocurrency</span></li>
+            <li><span>IIT Bombay — Python &amp; PostgreSQL</span></li>
+          </ul>
+          <p class="cert-note">On TryHackMe: completed the <strong>Autopsy</strong> room (disk imaging, artefact analysis, forensic timelines) at 100%, alongside regular practice in SIEM alert triage, log analysis and MITRE ATT&amp;CK mapping. Active CTF participant with an OSINT and threat-intel focus, and I attended the OWASP London Chapter meetup in March 2026.</p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="contact section container">
-      <div class="section-label">04 / CONTACT</div>
-      <h2>Interested in cybersecurity, research or building something meaningful?</h2>
-      <a class="big-link" href="mailto:hello@dayanidhi.com">hello@dayanidhi.com <span>↗</span></a>
+      <div class="section-label">CONTACT</div>
+      <h2>Working on something in security, forensics, or AI safety? Let's talk.</h2>
+      <a class="big-link" href="mailto:mail.dayanidhim@gmail.com">mail.dayanidhim@gmail.com <span>↗</span></a>
       <div class="socials">
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="Medium">Medium</a>
-        <a href="#" aria-label="TryHackMe">TryHackMe</a>
+        <a href="https://linkedin.com/in/dayanidhi-m" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/nobydayan" target="_blank" rel="noreferrer">GitHub</a>
+        <span>TryHackMe</span>
       </div>
     </section>
   </main>
 
   <footer class="container">
     <span>© <span id="year"></span> Dayanidhi Meganathan</span>
-    <span>Cybersecurity · Research · Build in public</span>
+    <span>Cybersecurity · Digital Forensics · Built in public</span>
   </footer>
 
   <script src="script.js"></script>
