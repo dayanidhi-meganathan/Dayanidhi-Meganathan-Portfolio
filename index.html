@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dayanidhi Meganathan — MSc Cyber Security student, cybersecurity researcher and builder in the UK." />
+  <title>Dayanidhi Meganathan | Cybersecurity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand" href="#home">DAYANIDHI<span>.</span></a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="eyebrow"><span class="pulse"></span> Based in the United Kingdom</div>
+      <h1>Building at the intersection of <span>cybersecurity</span>, research & AI.</h1>
+      <p class="hero-copy">I'm <strong>Dayanidhi Meganathan</strong>, an MSc Cyber Security student documenting practical security work, investigations and technical growth.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#work">Explore my work <span>↗</span></a>
+        <a class="btn ghost" href="#contact">Let's connect</a>
+      </div>
+      <div class="signal-row">
+        <div><b>01</b><span>Cybersecurity</span></div>
+        <div><b>02</b><span>Research</span></div>
+        <div><b>03</b><span>AI Security</span></div>
+        <div><b>04</b><span>DFIR</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="split">
+        <h2>I learn by building, investigating and sharing.</h2>
+        <div class="body-copy">
+          <p>Currently pursuing an <strong>MSc Cyber Security with Work Placement</strong> at the University of Hertfordshire.</p>
+          <p>My interests span security operations, digital forensics, AI security and practical offensive security. I use this site as the central record of my projects, research and contributions to the security community.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <div class="section-label">02 / SELECTED WORK</div>
+      <div class="section-head">
+        <h2>Projects & investigations</h2>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">View GitHub ↗</a>
+      </div>
+      <div class="cards">
+        <article class="card featured">
+          <div class="card-top"><span>Browser Security</span><span>01</span></div>
+          <div>
+            <h3>SecureCookieGuard</h3>
+            <p>A Chrome extension exploring stronger cookie protection, encryption and threat detection in modern browser environments.</p>
+          </div>
+          <div class="tags"><span>AES-256</span><span>Chrome MV3</span><span>Security</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span>Risk Analysis</span><span>02</span></div>
+          <div>
+            <h3>OWASP CVSS Risk Calculator</h3>
+            <p>A practical security project focused on vulnerability scoring and communicating technical risk.</p>
+          </div>
+          <div class="tags"><span>OWASP</span><span>CVSS</span></div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span>Digital Forensics</span><span>03</span></div>
+          <div>
+            <h3>DFIR Investigations</h3>
+            <p>Hands-on forensic workflows covering evidence acquisition, imaging and structured investigation.</p>
+          </div>
+          <div class="tags"><span>Autopsy</span><span>Forensics</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <div class="section-label">03 / RESEARCH & WRITING</div>
+      <div class="split">
+        <h2>Turning technical curiosity into public work.</h2>
+        <div class="body-copy">
+          <p>I'm developing my research footprint around cybersecurity and emerging AI security challenges. Publications, technical articles and research identifiers will be collected here.</p>
+          <div class="link-stack">
+            <a href="#" aria-label="ORCID profile">ORCID <span>↗</span></a>
+            <a href="#" aria-label="Google Scholar profile">Google Scholar <span>↗</span></a>
+            <a href="#" aria-label="Medium profile">Medium <span>↗</span></a>
+            <a href="#" aria-label="ResearchGate profile">ResearchGate <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section container">
+      <div class="section-label">04 / CONTACT</div>
+      <h2>Interested in cybersecurity, research or building something meaningful?</h2>
+      <a class="big-link" href="mailto:hello@dayanidhi.com">hello@dayanidhi.com <span>↗</span></a>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Medium">Medium</a>
+        <a href="#" aria-label="TryHackMe">TryHackMe</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>© <span id="year"></span> Dayanidhi Meganathan</span>
+    <span>Cybersecurity · Research · Build in public</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
